@@ -1,0 +1,93 @@
+-- Create table
+create table M_300_CONFIRM_NVALUE_COUNT
+(
+  seq_no         VARCHAR2(20),
+  confirm_person VARCHAR2(20),
+  confirm_time   DATE default sysdate,
+  etl_date       VARCHAR2(6),
+  org_code       VARCHAR2(20),
+  contri_code    VARCHAR2(20),
+  table_ename    VARCHAR2(100),
+  confirm_status CHAR(1) default 0,
+  table_cname    VARCHAR2(200),
+  org_name       VARCHAR2(200),
+  contri_party   VARCHAR2(100)
+)
+tablespace SYSTEM
+  pctfree 10
+  pctused 40
+  initrans 1
+  maxtrans 255
+  storage
+  (
+    initial 16K
+    next 8K
+    minextents 1
+    maxextents unlimited
+  );
+-- Add comments to the table 
+comment on table M_300_CONFIRM_NVALUE_COUNT
+  is '各表空置率统计表确认信息表';
+-- Add comments to the columns 
+comment on column M_300_CONFIRM_NVALUE_COUNT.seq_no
+  is '序列号';
+comment on column M_300_CONFIRM_NVALUE_COUNT.confirm_person
+  is '确认人';
+comment on column M_300_CONFIRM_NVALUE_COUNT.confirm_time
+  is '确认时间(默认为当前时间)';
+comment on column M_300_CONFIRM_NVALUE_COUNT.etl_date
+  is '批处理日期 YYYYMM';
+comment on column M_300_CONFIRM_NVALUE_COUNT.org_code
+  is '分行代码';
+comment on column M_300_CONFIRM_NVALUE_COUNT.contri_code
+  is '部门代码';
+comment on column M_300_CONFIRM_NVALUE_COUNT.table_ename
+  is '表英文名称';
+comment on column M_300_CONFIRM_NVALUE_COUNT.confirm_status
+  is '确认状态（未确认：0，已确认：1）';
+comment on column M_300_CONFIRM_NVALUE_COUNT.table_cname
+  is '表中文名称';
+comment on column M_300_CONFIRM_NVALUE_COUNT.org_name
+  is '分行名称';
+comment on column M_300_CONFIRM_NVALUE_COUNT.contri_party
+  is '部门';
+
+
+
+-- Create table
+create table M_300_ROLE_PARTY_NVALUE_COUNT
+(
+  seq_no       VARCHAR2(20),
+  role         VARCHAR2(20),
+  contri_code  VARCHAR2(20),
+  contri_party VARCHAR2(100),
+  create_time  DATE default sysdate
+)
+tablespace SYSTEM
+  pctfree 10
+  pctused 40
+  initrans 1
+  maxtrans 255
+  storage
+  (
+    initial 64K
+    next 8K
+    minextents 1
+    maxextents unlimited
+  );
+-- Add comments to the table 
+comment on table M_300_ROLE_PARTY_NVALUE_COUNT
+  is '各表空置率统计表角色部门映射表';
+-- Add comments to the columns 
+comment on column M_300_ROLE_PARTY_NVALUE_COUNT.seq_no
+  is '序列号';
+comment on column M_300_ROLE_PARTY_NVALUE_COUNT.role
+  is '角色';
+comment on column M_300_ROLE_PARTY_NVALUE_COUNT.contri_code
+  is '部门代码';
+comment on column M_300_ROLE_PARTY_NVALUE_COUNT.contri_party
+  is '部门';
+comment on column M_300_ROLE_PARTY_NVALUE_COUNT.create_time
+  is '创建时间';
+
+--20181015
