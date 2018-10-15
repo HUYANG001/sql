@@ -90,4 +90,21 @@ comment on column M_300_ROLE_PARTY_NVALUE_COUNT.contri_party
 comment on column M_300_ROLE_PARTY_NVALUE_COUNT.create_time
   is '创建时间';
 
+
+
+insert into function_info (FUNCID, FUNCNAME, PAGEPATH, LOCATION, ISDIRECTORY, LASTDIRECTORY, SHOWSEQ, FUNC_CLASS, FUNC_TYPE, WORKFLOW_FLAG, UP_FUNC_CODE, FUNC_DESC, STATUS, EFFECT_DATE, EXPIRE_DATE, TIMESTAMPS, MISCFLGS, MISC, ICON_CLS)
+values ('1501', '系统行为监控登记表', '/fpages/export/form/ftl/M300SysMoniRegi.ftl', 2, 0, '15', 1, '1', '1', null, null, null, '1', null, null, null, null, null, null);
+
+insert into function_info (FUNCID, FUNCNAME, PAGEPATH, LOCATION, ISDIRECTORY, LASTDIRECTORY, SHOWSEQ, FUNC_CLASS, FUNC_TYPE, WORKFLOW_FLAG, UP_FUNC_CODE, FUNC_DESC, STATUS, EFFECT_DATE, EXPIRE_DATE, TIMESTAMPS, MISCFLGS, MISC, ICON_CLS)
+values ('1502', '系统行为监控报表', '/fpages/export/form/ftl/M300SysMoniReport.ftl', 2, 0, '15', 2, '1', '1', null, null, null, '1', null, null, null, null, null, null);
+
+insert into function_info (FUNCID, FUNCNAME, PAGEPATH, LOCATION, ISDIRECTORY, LASTDIRECTORY, SHOWSEQ, FUNC_CLASS, FUNC_TYPE, WORKFLOW_FLAG, UP_FUNC_CODE, FUNC_DESC, STATUS, EFFECT_DATE, EXPIRE_DATE, TIMESTAMPS, MISCFLGS, MISC, ICON_CLS)
+values ('1503', '各表空置率统计表', '/fpages/export/form/ftl/M300TabNvalueCount.ftl', 2, 0, '15', 3, '1', '1', null, null, null, '1', null, null, null, null, null, null);
+
+insert into function_info (FUNCID, FUNCNAME, PAGEPATH, LOCATION, ISDIRECTORY, LASTDIRECTORY, SHOWSEQ, FUNC_CLASS, FUNC_TYPE, WORKFLOW_FLAG, UP_FUNC_CODE, FUNC_DESC, STATUS, EFFECT_DATE, EXPIRE_DATE, TIMESTAMPS, MISCFLGS, MISC, ICON_CLS)
+values ('1504', '数据监控质量汇总表', '/fpages/export/form/ftl/M300DataMoniQualSum.ftl', 2, 0, '15', 4, '1', '1', null, null, null, '1', null, null, null, null, null, null);
+
+
+
+
 --20181015
