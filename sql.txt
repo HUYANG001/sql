@@ -1,3 +1,5 @@
+--20181015
+
 -- Create table
 create table M_300_CONFIRM_NVALUE_COUNT
 (
@@ -105,6 +107,135 @@ insert into function_info (FUNCID, FUNCNAME, PAGEPATH, LOCATION, ISDIRECTORY, LA
 values ('1504', '数据监控质量汇总表', '/fpages/export/form/ftl/M300DataMoniQualSum.ftl', 2, 0, '15', 4, '1', '1', null, null, null, '1', null, null, null, null, null, null);
 
 
+少个表头
+
+--20181016
+
+--data_dic
+
+insert into data_dic (ID, DATA_TYPE_NO, DATA_NO, DATA_TYPE_NAME, DATA_NO_LEN, DATA_NAME, LIMIT_FLAG, HIGH_LIMIT, LOW_LIMIT, EFFECT_DATE, EXPIRE_DATE, TIMESTAMPS, MISCFLGS, APPROVE_STATUS, APPROVE_RESULT, REC_STATUS, REP_STATUS, IS_SUB_SUCCESS, CRT_TM, LST_UPD_TM, LST_UPD_TLR, APPTYPE, BR_NO, YWDATE, ORGCODE, RECORD_UPD_TLR, RECORD_UPD_TM, ST)
+values (199, 20000, 'BMO', '部门', null, 'BMO', null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, '1');
+
+insert into data_dic (ID, DATA_TYPE_NO, DATA_NO, DATA_TYPE_NAME, DATA_NO_LEN, DATA_NAME, LIMIT_FLAG, HIGH_LIMIT, LOW_LIMIT, EFFECT_DATE, EXPIRE_DATE, TIMESTAMPS, MISCFLGS, APPROVE_STATUS, APPROVE_RESULT, REC_STATUS, REP_STATUS, IS_SUB_SUCCESS, CRT_TM, LST_UPD_TM, LST_UPD_TLR, APPTYPE, BR_NO, YWDATE, ORGCODE, RECORD_UPD_TLR, RECORD_UPD_TM, ST)
+values (200, 20000, 'CMB', '部门', null, 'GLOBAL STANDARDS(CMB)', null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, '1');
+
+insert into data_dic (ID, DATA_TYPE_NO, DATA_NO, DATA_TYPE_NAME, DATA_NO_LEN, DATA_NAME, LIMIT_FLAG, HIGH_LIMIT, LOW_LIMIT, EFFECT_DATE, EXPIRE_DATE, TIMESTAMPS, MISCFLGS, APPROVE_STATUS, APPROVE_RESULT, REC_STATUS, REP_STATUS, IS_SUB_SUCCESS, CRT_TM, LST_UPD_TM, LST_UPD_TLR, APPTYPE, BR_NO, YWDATE, ORGCODE, RECORD_UPD_TLR, RECORD_UPD_TM, ST)
+values (201, 20000, 'GBM', '部门', null, 'GBM', null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, '1');
+
+insert into data_dic (ID, DATA_TYPE_NO, DATA_NO, DATA_TYPE_NAME, DATA_NO_LEN, DATA_NAME, LIMIT_FLAG, HIGH_LIMIT, LOW_LIMIT, EFFECT_DATE, EXPIRE_DATE, TIMESTAMPS, MISCFLGS, APPROVE_STATUS, APPROVE_RESULT, REC_STATUS, REP_STATUS, IS_SUB_SUCCESS, CRT_TM, LST_UPD_TM, LST_UPD_TLR, APPTYPE, BR_NO, YWDATE, ORGCODE, RECORD_UPD_TLR, RECORD_UPD_TM, ST)
+values (202, 20000, 'BOS_W', '部门', null, 'BOS(Whole Sale)', null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, '1');
+
+insert into data_dic (ID, DATA_TYPE_NO, DATA_NO, DATA_TYPE_NAME, DATA_NO_LEN, DATA_NAME, LIMIT_FLAG, HIGH_LIMIT, LOW_LIMIT, EFFECT_DATE, EXPIRE_DATE, TIMESTAMPS, MISCFLGS, APPROVE_STATUS, APPROVE_RESULT, REC_STATUS, REP_STATUS, IS_SUB_SUCCESS, CRT_TM, LST_UPD_TM, LST_UPD_TLR, APPTYPE, BR_NO, YWDATE, ORGCODE, RECORD_UPD_TLR, RECORD_UPD_TM, ST)
+values (203, 20000, 'Core_Trade', '部门', null, 'Core_Trade', null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, '1');
+
+insert into data_dic (ID, DATA_TYPE_NO, DATA_NO, DATA_TYPE_NAME, DATA_NO_LEN, DATA_NAME, LIMIT_FLAG, HIGH_LIMIT, LOW_LIMIT, EFFECT_DATE, EXPIRE_DATE, TIMESTAMPS, MISCFLGS, APPROVE_STATUS, APPROVE_RESULT, REC_STATUS, REP_STATUS, IS_SUB_SUCCESS, CRT_TM, LST_UPD_TM, LST_UPD_TLR, APPTYPE, BR_NO, YWDATE, ORGCODE, RECORD_UPD_TLR, RECORD_UPD_TM, ST)
+values (204, 20000, 'HSS', '部门', null, 'HSS', null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, '1');
+
+insert into data_dic (ID, DATA_TYPE_NO, DATA_NO, DATA_TYPE_NAME, DATA_NO_LEN, DATA_NAME, LIMIT_FLAG, HIGH_LIMIT, LOW_LIMIT, EFFECT_DATE, EXPIRE_DATE, TIMESTAMPS, MISCFLGS, APPROVE_STATUS, APPROVE_RESULT, REC_STATUS, REP_STATUS, IS_SUB_SUCCESS, CRT_TM, LST_UPD_TM, LST_UPD_TLR, APPTYPE, BR_NO, YWDATE, ORGCODE, RECORD_UPD_TLR, RECORD_UPD_TM, ST)
+values (205, 20000, 'CNQ_LOANS', '部门', null, 'CNQ RBWM -CARDS AND LOANS', null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, '1');
+
+insert into data_dic (ID, DATA_TYPE_NO, DATA_NO, DATA_TYPE_NAME, DATA_NO_LEN, DATA_NAME, LIMIT_FLAG, HIGH_LIMIT, LOW_LIMIT, EFFECT_DATE, EXPIRE_DATE, TIMESTAMPS, MISCFLGS, APPROVE_STATUS, APPROVE_RESULT, REC_STATUS, REP_STATUS, IS_SUB_SUCCESS, CRT_TM, LST_UPD_TM, LST_UPD_TLR, APPTYPE, BR_NO, YWDATE, ORGCODE, RECORD_UPD_TLR, RECORD_UPD_TM, ST)
+values (206, 20000, 'GPB', '部门', null, 'GPB BM', null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, '1');
+
+insert into data_dic (ID, DATA_TYPE_NO, DATA_NO, DATA_TYPE_NAME, DATA_NO_LEN, DATA_NAME, LIMIT_FLAG, HIGH_LIMIT, LOW_LIMIT, EFFECT_DATE, EXPIRE_DATE, TIMESTAMPS, MISCFLGS, APPROVE_STATUS, APPROVE_RESULT, REC_STATUS, REP_STATUS, IS_SUB_SUCCESS, CRT_TM, LST_UPD_TM, LST_UPD_TLR, APPTYPE, BR_NO, YWDATE, ORGCODE, RECORD_UPD_TLR, RECORD_UPD_TM, ST)
+values (207, 20000, 'GTE', '部门', null, 'GTE', null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, '1');
+
+insert into data_dic (ID, DATA_TYPE_NO, DATA_NO, DATA_TYPE_NAME, DATA_NO_LEN, DATA_NAME, LIMIT_FLAG, HIGH_LIMIT, LOW_LIMIT, EFFECT_DATE, EXPIRE_DATE, TIMESTAMPS, MISCFLGS, APPROVE_STATUS, APPROVE_RESULT, REC_STATUS, REP_STATUS, IS_SUB_SUCCESS, CRT_TM, LST_UPD_TM, LST_UPD_TLR, APPTYPE, BR_NO, YWDATE, ORGCODE, RECORD_UPD_TLR, RECORD_UPD_TM, ST)
+values (208, 20000, 'MOR_OPS', '部门', null, 'MORTGAGE SVS CNQ OPS', null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, '1');
+
+insert into data_dic (ID, DATA_TYPE_NO, DATA_NO, DATA_TYPE_NAME, DATA_NO_LEN, DATA_NAME, LIMIT_FLAG, HIGH_LIMIT, LOW_LIMIT, EFFECT_DATE, EXPIRE_DATE, TIMESTAMPS, MISCFLGS, APPROVE_STATUS, APPROVE_RESULT, REC_STATUS, REP_STATUS, IS_SUB_SUCCESS, CRT_TM, LST_UPD_TM, LST_UPD_TLR, APPTYPE, BR_NO, YWDATE, ORGCODE, RECORD_UPD_TLR, RECORD_UPD_TM, ST)
+values (209, 20000, 'Credit_OPS', '部门', null, 'Credit OPS', null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, '1');
+
+insert into data_dic (ID, DATA_TYPE_NO, DATA_NO, DATA_TYPE_NAME, DATA_NO_LEN, DATA_NAME, LIMIT_FLAG, HIGH_LIMIT, LOW_LIMIT, EFFECT_DATE, EXPIRE_DATE, TIMESTAMPS, MISCFLGS, APPROVE_STATUS, APPROVE_RESULT, REC_STATUS, REP_STATUS, IS_SUB_SUCCESS, CRT_TM, LST_UPD_TM, LST_UPD_TLR, APPTYPE, BR_NO, YWDATE, ORGCODE, RECORD_UPD_TLR, RECORD_UPD_TM, ST)
+values (210, 20000, 'PSV', '部门', null, 'PSV', null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, '1');
+
+insert into data_dic (ID, DATA_TYPE_NO, DATA_NO, DATA_TYPE_NAME, DATA_NO_LEN, DATA_NAME, LIMIT_FLAG, HIGH_LIMIT, LOW_LIMIT, EFFECT_DATE, EXPIRE_DATE, TIMESTAMPS, MISCFLGS, APPROVE_STATUS, APPROVE_RESULT, REC_STATUS, REP_STATUS, IS_SUB_SUCCESS, CRT_TM, LST_UPD_TM, LST_UPD_TLR, APPTYPE, BR_NO, YWDATE, ORGCODE, RECORD_UPD_TLR, RECORD_UPD_TM, ST)
+values (211, 20000, 'RFN', '部门', null, 'RFN', null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, '1');
+
+insert into data_dic (ID, DATA_TYPE_NO, DATA_NO, DATA_TYPE_NAME, DATA_NO_LEN, DATA_NAME, LIMIT_FLAG, HIGH_LIMIT, LOW_LIMIT, EFFECT_DATE, EXPIRE_DATE, TIMESTAMPS, MISCFLGS, APPROVE_STATUS, APPROVE_RESULT, REC_STATUS, REP_STATUS, IS_SUB_SUCCESS, CRT_TM, LST_UPD_TM, LST_UPD_TLR, APPTYPE, BR_NO, YWDATE, ORGCODE, RECORD_UPD_TLR, RECORD_UPD_TM, ST)
+values (212, 20000, 'BOS_C', '部门', null, 'BOS(Consumer)', null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, '1');
+
+insert into data_dic (ID, DATA_TYPE_NO, DATA_NO, DATA_TYPE_NAME, DATA_NO_LEN, DATA_NAME, LIMIT_FLAG, HIGH_LIMIT, LOW_LIMIT, EFFECT_DATE, EXPIRE_DATE, TIMESTAMPS, MISCFLGS, APPROVE_STATUS, APPROVE_RESULT, REC_STATUS, REP_STATUS, IS_SUB_SUCCESS, CRT_TM, LST_UPD_TM, LST_UPD_TLR, APPTYPE, BR_NO, YWDATE, ORGCODE, RECORD_UPD_TLR, RECORD_UPD_TM, ST)
+values (213, 20000, 'RBWM', '部门', null, 'RBWM BRCM', null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, '1');
 
 
---20181015
+--role_info
+
+ 
+ insert into role_info (ROLE_ID, ROLE_NAME, STATUS, EFFECT_DATE, EXPIRE_DATE, BRCLASS, LAST_UPD_DATE, LAST_UPD_FUNC, LAST_UPD_TLR, TIMESTAMPS, MISCFLGS, MISC, ROLE_TYPE, IS_LOCK, CRT_DT, LAST_UPD_TMS, LAST_UPD_OPER, ST)
+values (258, '300ZLBB_BMO#CHECKER', '1', null, null, null, null, null, null, null, null, null, null, '0', null, null, null, '4');
+
+ insert into role_info (ROLE_ID, ROLE_NAME, STATUS, EFFECT_DATE, EXPIRE_DATE, BRCLASS, LAST_UPD_DATE, LAST_UPD_FUNC, LAST_UPD_TLR, TIMESTAMPS, MISCFLGS, MISC, ROLE_TYPE, IS_LOCK, CRT_DT, LAST_UPD_TMS, LAST_UPD_OPER, ST)
+values (259, '300ZLBB_CMB#CHECKER', '1', null, null, null, null, null, null, null, null, null, null, '0', null, null, null, '4');
+
+
+
+ insert into role_info (ROLE_ID, ROLE_NAME, STATUS, EFFECT_DATE, EXPIRE_DATE, BRCLASS, LAST_UPD_DATE, LAST_UPD_FUNC, LAST_UPD_TLR, TIMESTAMPS, MISCFLGS, MISC, ROLE_TYPE, IS_LOCK, CRT_DT, LAST_UPD_TMS, LAST_UPD_OPER, ST)
+values (260, '300ZLBB_GBM#CHECKER', '1', null, null, null, null, null, null, null, null, null, null, '0', null, null, null, '4');
+
+
+
+
+ insert into role_info (ROLE_ID, ROLE_NAME, STATUS, EFFECT_DATE, EXPIRE_DATE, BRCLASS, LAST_UPD_DATE, LAST_UPD_FUNC, LAST_UPD_TLR, TIMESTAMPS, MISCFLGS, MISC, ROLE_TYPE, IS_LOCK, CRT_DT, LAST_UPD_TMS, LAST_UPD_OPER, ST)
+values (261, '300ZLBB_BOS_W#CHECKER', '1', null, null, null, null, null, null, null, null, null, null, '0', null, null, null, '4');
+
+
+
+ insert into role_info (ROLE_ID, ROLE_NAME, STATUS, EFFECT_DATE, EXPIRE_DATE, BRCLASS, LAST_UPD_DATE, LAST_UPD_FUNC, LAST_UPD_TLR, TIMESTAMPS, MISCFLGS, MISC, ROLE_TYPE, IS_LOCK, CRT_DT, LAST_UPD_TMS, LAST_UPD_OPER, ST)
+values (262, '300ZLBB_Core_Trade#CHECKER', '1', null, null, null, null, null, null, null, null, null, null, '0', null, null, null, '4');
+
+
+
+ insert into role_info (ROLE_ID, ROLE_NAME, STATUS, EFFECT_DATE, EXPIRE_DATE, BRCLASS, LAST_UPD_DATE, LAST_UPD_FUNC, LAST_UPD_TLR, TIMESTAMPS, MISCFLGS, MISC, ROLE_TYPE, IS_LOCK, CRT_DT, LAST_UPD_TMS, LAST_UPD_OPER, ST)
+values (263, '300ZLBB_HSS#CHECKER', '1', null, null, null, null, null, null, null, null, null, null, '0', null, null, null, '4');
+
+
+
+ insert into role_info (ROLE_ID, ROLE_NAME, STATUS, EFFECT_DATE, EXPIRE_DATE, BRCLASS, LAST_UPD_DATE, LAST_UPD_FUNC, LAST_UPD_TLR, TIMESTAMPS, MISCFLGS, MISC, ROLE_TYPE, IS_LOCK, CRT_DT, LAST_UPD_TMS, LAST_UPD_OPER, ST)
+values (264, '300ZLBB_CNQ_LOANS#CHECKER', '1', null, null, null, null, null, null, null, null, null, null, '0', null, null, null, '4');
+
+
+
+ insert into role_info (ROLE_ID, ROLE_NAME, STATUS, EFFECT_DATE, EXPIRE_DATE, BRCLASS, LAST_UPD_DATE, LAST_UPD_FUNC, LAST_UPD_TLR, TIMESTAMPS, MISCFLGS, MISC, ROLE_TYPE, IS_LOCK, CRT_DT, LAST_UPD_TMS, LAST_UPD_OPER, ST)
+values (265, '300ZLBB_GPB#CHECKER', '1', null, null, null, null, null, null, null, null, null, null, '0', null, null, null, '4');
+
+
+
+ insert into role_info (ROLE_ID, ROLE_NAME, STATUS, EFFECT_DATE, EXPIRE_DATE, BRCLASS, LAST_UPD_DATE, LAST_UPD_FUNC, LAST_UPD_TLR, TIMESTAMPS, MISCFLGS, MISC, ROLE_TYPE, IS_LOCK, CRT_DT, LAST_UPD_TMS, LAST_UPD_OPER, ST)
+values (266, '300ZLBB_GTE#CHECKER', '1', null, null, null, null, null, null, null, null, null, null, '0', null, null, null, '4');
+
+
+
+ insert into role_info (ROLE_ID, ROLE_NAME, STATUS, EFFECT_DATE, EXPIRE_DATE, BRCLASS, LAST_UPD_DATE, LAST_UPD_FUNC, LAST_UPD_TLR, TIMESTAMPS, MISCFLGS, MISC, ROLE_TYPE, IS_LOCK, CRT_DT, LAST_UPD_TMS, LAST_UPD_OPER, ST)
+values (267, '300ZLBB_MOR_OPS#CHECKER', '1', null, null, null, null, null, null, null, null, null, null, '0', null, null, null, '4');
+
+
+
+ insert into role_info (ROLE_ID, ROLE_NAME, STATUS, EFFECT_DATE, EXPIRE_DATE, BRCLASS, LAST_UPD_DATE, LAST_UPD_FUNC, LAST_UPD_TLR, TIMESTAMPS, MISCFLGS, MISC, ROLE_TYPE, IS_LOCK, CRT_DT, LAST_UPD_TMS, LAST_UPD_OPER, ST)
+values (268, '300ZLBB_Credit_OPS#CHECKER', '1', null, null, null, null, null, null, null, null, null, null, '0', null, null, null, '4');
+
+
+
+ insert into role_info (ROLE_ID, ROLE_NAME, STATUS, EFFECT_DATE, EXPIRE_DATE, BRCLASS, LAST_UPD_DATE, LAST_UPD_FUNC, LAST_UPD_TLR, TIMESTAMPS, MISCFLGS, MISC, ROLE_TYPE, IS_LOCK, CRT_DT, LAST_UPD_TMS, LAST_UPD_OPER, ST)
+values (269, '300ZLBB_PSV#CHECKER', '1', null, null, null, null, null, null, null, null, null, null, '0', null, null, null, '4');
+
+
+
+ insert into role_info (ROLE_ID, ROLE_NAME, STATUS, EFFECT_DATE, EXPIRE_DATE, BRCLASS, LAST_UPD_DATE, LAST_UPD_FUNC, LAST_UPD_TLR, TIMESTAMPS, MISCFLGS, MISC, ROLE_TYPE, IS_LOCK, CRT_DT, LAST_UPD_TMS, LAST_UPD_OPER, ST)
+values (270, '300ZLBB_RFN#CHECKER', '1', null, null, null, null, null, null, null, null, null, null, '0', null, null, null, '4');
+
+
+
+ insert into role_info (ROLE_ID, ROLE_NAME, STATUS, EFFECT_DATE, EXPIRE_DATE, BRCLASS, LAST_UPD_DATE, LAST_UPD_FUNC, LAST_UPD_TLR, TIMESTAMPS, MISCFLGS, MISC, ROLE_TYPE, IS_LOCK, CRT_DT, LAST_UPD_TMS, LAST_UPD_OPER, ST)
+values (271, '300ZLBB_BOS_C#CHECKER', '1', null, null, null, null, null, null, null, null, null, null, '0', null, null, null, '4');
+
+
+
+ insert into role_info (ROLE_ID, ROLE_NAME, STATUS, EFFECT_DATE, EXPIRE_DATE, BRCLASS, LAST_UPD_DATE, LAST_UPD_FUNC, LAST_UPD_TLR, TIMESTAMPS, MISCFLGS, MISC, ROLE_TYPE, IS_LOCK, CRT_DT, LAST_UPD_TMS, LAST_UPD_OPER, ST)
+values (272, '300ZLBB_RBWM#CHECKER', '1', null, null, null, null, null, null, null, null, null, null, '0', null, null, null, '4');
+
+
+
+
+
+
