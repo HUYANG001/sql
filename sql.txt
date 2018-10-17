@@ -14,19 +14,7 @@ create table M_300_CONFIRM_NVALUE_COUNT
   table_cname    VARCHAR2(200),
   org_name       VARCHAR2(200),
   contri_party   VARCHAR2(100)
-)
-tablespace SYSTEM
-  pctfree 10
-  pctused 40
-  initrans 1
-  maxtrans 255
-  storage
-  (
-    initial 16K
-    next 8K
-    minextents 1
-    maxextents unlimited
-  );
+);
 -- Add comments to the table 
 comment on table M_300_CONFIRM_NVALUE_COUNT
   is '各表空置率统计表确认信息表';
@@ -64,19 +52,7 @@ create table M_300_ROLE_PARTY_NVALUE_COUNT
   contri_code  VARCHAR2(20),
   contri_party VARCHAR2(100),
   create_time  DATE default sysdate
-)
-tablespace SYSTEM
-  pctfree 10
-  pctused 40
-  initrans 1
-  maxtrans 255
-  storage
-  (
-    initial 64K
-    next 8K
-    minextents 1
-    maxextents unlimited
-  );
+);
 -- Add comments to the table 
 comment on table M_300_ROLE_PARTY_NVALUE_COUNT
   is '各表空置率统计表角色部门映射表';
@@ -237,6 +213,7 @@ values (272, '300ZLBB_RBWM#CHECKER', '1', null, null, null, null, null, null, nu
 
 --20181017
 
+--data_dic
 
 
 insert into data_dic (ID, DATA_TYPE_NO, DATA_NO, DATA_TYPE_NAME, DATA_NO_LEN, DATA_NAME, LIMIT_FLAG, HIGH_LIMIT, LOW_LIMIT, EFFECT_DATE, EXPIRE_DATE, TIMESTAMPS, MISCFLGS, APPROVE_STATUS, APPROVE_RESULT, REC_STATUS, REP_STATUS, IS_SUB_SUCCESS, CRT_TM, LST_UPD_TM, LST_UPD_TLR, APPTYPE, BR_NO, YWDATE, ORGCODE, RECORD_UPD_TLR, RECORD_UPD_TM, ST)
@@ -263,6 +240,25 @@ values (218, 20001, '05', '异常问题', null, '05-系统问题', null, null, null, nul
 insert into data_dic (ID, DATA_TYPE_NO, DATA_NO, DATA_TYPE_NAME, DATA_NO_LEN, DATA_NAME, LIMIT_FLAG, HIGH_LIMIT, LOW_LIMIT, EFFECT_DATE, EXPIRE_DATE, TIMESTAMPS, MISCFLGS, APPROVE_STATUS, APPROVE_RESULT, REC_STATUS, REP_STATUS, IS_SUB_SUCCESS, CRT_TM, LST_UPD_TM, LST_UPD_TLR, APPTYPE, BR_NO, YWDATE, ORGCODE, RECORD_UPD_TLR, RECORD_UPD_TM, ST)
 values (219, 20001, '06', '异常问题', null, '06-其他问题', null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, '1');
 
+
+--sequence
+
+create sequence SEQ_M_300_CONFIRM
+minvalue 1
+maxvalue 9999999999999999999999999999
+start with 81
+increment by 1
+cache 20;
+
+
+
+create sequence SEQ_M_300_SYS_MONI_REGI
+minvalue 1
+maxvalue 999999999999
+start with 41
+increment by 1
+nocache
+cycle;
 
 
 
