@@ -68,7 +68,7 @@ comment on column M_300_ROLE_PARTY_NVALUE_COUNT.contri_party
 comment on column M_300_ROLE_PARTY_NVALUE_COUNT.create_time
   is '创建时间';
 
-
+delete from function_info  where  funcid>=1501 and funcid<=1505
 
 insert into function_info (FUNCID, FUNCNAME, PAGEPATH, LOCATION, ISDIRECTORY, LASTDIRECTORY, SHOWSEQ, FUNC_CLASS, FUNC_TYPE, WORKFLOW_FLAG, UP_FUNC_CODE, FUNC_DESC, STATUS, EFFECT_DATE, EXPIRE_DATE, TIMESTAMPS, MISCFLGS, MISC, ICON_CLS)
 values ('1501', '系统行为监控登记表', '/fpages/export/form/ftl/M300SysMoniRegi.ftl', 2, 0, '15', 1, '1', '1', null, null, null, '1', null, null, null, null, null, null);
@@ -77,17 +77,23 @@ insert into function_info (FUNCID, FUNCNAME, PAGEPATH, LOCATION, ISDIRECTORY, LA
 values ('1502', '系统行为监控报表', '/fpages/export/form/ftl/M300SysMoniReport.ftl', 2, 0, '15', 2, '1', '1', null, null, null, '1', null, null, null, null, null, null);
 
 insert into function_info (FUNCID, FUNCNAME, PAGEPATH, LOCATION, ISDIRECTORY, LASTDIRECTORY, SHOWSEQ, FUNC_CLASS, FUNC_TYPE, WORKFLOW_FLAG, UP_FUNC_CODE, FUNC_DESC, STATUS, EFFECT_DATE, EXPIRE_DATE, TIMESTAMPS, MISCFLGS, MISC, ICON_CLS)
-values ('1503', '各表空置率统计表', '/fpages/export/form/ftl/M300TabNvalueCount.ftl', 2, 0, '15', 3, '1', '1', null, null, null, '1', null, null, null, null, null, null);
+values ('1503', '各表空置率统计表信息确认表', '/fpages/export/form/ftl/M300TabNvalueCount.ftl', 2, 0, '15', 3, '1', '1', null, null, null, '1', null, null, null, null, null, null);
 
 insert into function_info (FUNCID, FUNCNAME, PAGEPATH, LOCATION, ISDIRECTORY, LASTDIRECTORY, SHOWSEQ, FUNC_CLASS, FUNC_TYPE, WORKFLOW_FLAG, UP_FUNC_CODE, FUNC_DESC, STATUS, EFFECT_DATE, EXPIRE_DATE, TIMESTAMPS, MISCFLGS, MISC, ICON_CLS)
-values ('1504', '数据监控质量汇总表', '/fpages/export/form/ftl/M300DataMoniQualSum.ftl', 2, 0, '15', 4, '1', '1', null, null, null, '1', null, null, null, null, null, null);
+values ('1504', '各表空置率统计表', '/fpages/export/form/ftl/M300TabNvalueCount0.ftl', 2, 0, '15', 4, '1', '1', null, null, null, '1', null, null, null, null, null, null);
+
+insert into function_info (FUNCID, FUNCNAME, PAGEPATH, LOCATION, ISDIRECTORY, LASTDIRECTORY, SHOWSEQ, FUNC_CLASS, FUNC_TYPE, WORKFLOW_FLAG, UP_FUNC_CODE, FUNC_DESC, STATUS, EFFECT_DATE, EXPIRE_DATE, TIMESTAMPS, MISCFLGS, MISC, ICON_CLS)
+values ('1505', '数据监控质量汇总表', '/fpages/export/form/ftl/M300DataMoniQualSum.ftl', 2, 0, '15', 5, '1', '1', null, null, null, '1', null, null, null, null, null, null);
 
 
-少个表头
+insert into function_info (FUNCID, FUNCNAME, PAGEPATH, LOCATION, ISDIRECTORY, LASTDIRECTORY, SHOWSEQ, FUNC_CLASS, FUNC_TYPE, WORKFLOW_FLAG, UP_FUNC_CODE, FUNC_DESC, STATUS, EFFECT_DATE, EXPIRE_DATE, TIMESTAMPS, MISCFLGS, MISC, ICON_CLS)
+values ('15', '报表', null, 2, 1, '0', 7, null, '0', null, null, null, '1', null, null, null, null, null, null);
 
 --20181016
 
 --data_dic
+
+delete from data_dic  where  DATA_TYPE_NO=20000
 
 insert into data_dic (ID, DATA_TYPE_NO, DATA_NO, DATA_TYPE_NAME, DATA_NO_LEN, DATA_NAME, LIMIT_FLAG, HIGH_LIMIT, LOW_LIMIT, EFFECT_DATE, EXPIRE_DATE, TIMESTAMPS, MISCFLGS, APPROVE_STATUS, APPROVE_RESULT, REC_STATUS, REP_STATUS, IS_SUB_SUCCESS, CRT_TM, LST_UPD_TM, LST_UPD_TLR, APPTYPE, BR_NO, YWDATE, ORGCODE, RECORD_UPD_TLR, RECORD_UPD_TM, ST)
 values (199, 20000, 'BMO', '部门', null, 'BMO', null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, '1');
@@ -134,8 +140,10 @@ values (212, 20000, 'BOS_C', '部门', null, 'BOS(Consumer)', null, null, null, nu
 insert into data_dic (ID, DATA_TYPE_NO, DATA_NO, DATA_TYPE_NAME, DATA_NO_LEN, DATA_NAME, LIMIT_FLAG, HIGH_LIMIT, LOW_LIMIT, EFFECT_DATE, EXPIRE_DATE, TIMESTAMPS, MISCFLGS, APPROVE_STATUS, APPROVE_RESULT, REC_STATUS, REP_STATUS, IS_SUB_SUCCESS, CRT_TM, LST_UPD_TM, LST_UPD_TLR, APPTYPE, BR_NO, YWDATE, ORGCODE, RECORD_UPD_TLR, RECORD_UPD_TM, ST)
 values (213, 20000, 'RBWM', '部门', null, 'RBWM BRCM', null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, '1');
 
-
+--220被占用
 --role_info
+
+delete from role_info  where  ROLE_ID>=258 and ROLE_ID<=272
 
  
  insert into role_info (ROLE_ID, ROLE_NAME, STATUS, EFFECT_DATE, EXPIRE_DATE, BRCLASS, LAST_UPD_DATE, LAST_UPD_FUNC, LAST_UPD_TLR, TIMESTAMPS, MISCFLGS, MISC, ROLE_TYPE, IS_LOCK, CRT_DT, LAST_UPD_TMS, LAST_UPD_OPER, ST)
@@ -215,6 +223,7 @@ values (272, '300ZLBB_RBWM#CHECKER', '1', null, null, null, null, null, null, nu
 
 --data_dic
 
+delete from data_dic  where  DATA_TYPE_NO=20001
 
 insert into data_dic (ID, DATA_TYPE_NO, DATA_NO, DATA_TYPE_NAME, DATA_NO_LEN, DATA_NAME, LIMIT_FLAG, HIGH_LIMIT, LOW_LIMIT, EFFECT_DATE, EXPIRE_DATE, TIMESTAMPS, MISCFLGS, APPROVE_STATUS, APPROVE_RESULT, REC_STATUS, REP_STATUS, IS_SUB_SUCCESS, CRT_TM, LST_UPD_TM, LST_UPD_TLR, APPTYPE, BR_NO, YWDATE, ORGCODE, RECORD_UPD_TLR, RECORD_UPD_TM, ST)
 values (214, 20001, '01', '异常问题', null, '01-数据问题', null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, '1');
